@@ -1,19 +1,119 @@
-.tien-home-face{
-  background: url('../../images/intro-image.png') no-repeat center;
-  background-size: cover;
-  width: 100vw;
-  height: 115vh;
-  display: flex;
-  margin: 0px;
-  flex-direction: column;
-  text-align: right;
-  color: white;
-  letter-spacing: 5px;
-  font-size: 20px;
-  font-family: 'Roboto Mono', monospace;
-  font-style: italic;
-  position: relative;
 
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1000 !important;
+}
 
+.hooks-main > svg {
+  display: none;
+  z-index: 1000 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.hooks-main > div {
+  position: absolute;
+  will-change: transform;
+  border-radius: 50%;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    #08dfe6 0%,
+    #f9fbfc 100%
+  ) !important;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hooks-main > div:nth-child(1) {
+  width: 120px;
+  height: 120px;
+}
+
+.hooks-main > div:nth-child(2) {
+  width: 250px;
+  height: 250px;
+}
+
+.hooks-main > div:nth-child(3) {
+  width: 150px;
+  height: 150px;
+}
+
+.hooks-main > div::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.hooks-main > div:nth-child(2)::after {
+  top: 70px;
+  left: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.hooks-main > div:nth-child(3)::after {
+  top: 50px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.hooks-main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: url("#goo");
+  overflow: hidden;
+}
+/* .size-caro{
+  min-width: 100% !important;
+  min-height: 100% !important;
+}
+.my-name{
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: monospace;
+  font-size: 40px;
+  display:flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content:center;
+  background-size:100%;
+} */

@@ -1,43 +1,74 @@
-import React from 'react'
-import './style.css'
-import { Row } from "react-bootstrap"
-import PropagateLoader from "react-spinners/PropagateLoader";
-import Macbook1 from "../../images/macbook1.png"
-import Macbook2 from "../../images/macbook2.png"
-import Macbook3 from "../../images/macbook3.png"
+import React from "react";
+import { useSpring, animated } from "react-spring";
+import "./style.css";
+import { Row, Carousel } from "react-bootstrap";
 
+const calc = (x, y) => [
+  -(y - window.innerHeight / 2) / 20,
+  (x - window.innerWidth / 2) / 20,
+  1.1,
+];
+const trans = (x, y, s) =>
+  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 const Portfolios = () => {
+  const [props, set] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: { mass: 5, tension: 350, friction: 40 },
+  }));
   return (
-    <div id='portfolios'>
-      <Row className="tien-title-port">
-        <h5>Scroll for more</h5>
-        <PropagateLoader size={15} color="#000000" style={{ border: "1px solid red" }} />
+    <div id="portfolios">
+      <Row className="nguyen-port-style">
+        <Carousel className="carousel-all">
+          <Carousel.Item>
+            <animated.div
+              className="card"
+              onMouseMove={({ clientX: x, clientY: y }) =>
+                set({ xys: calc(x, y) })
+              }
+              onMouseLeave={() => set({ xys: [0, 0, 1] })}
+              style={{ transform: props.xys.interpolate(trans) }}
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <animated.div
+              className="card"
+              onMouseMove={({ clientX: x, clientY: y }) =>
+                set({ xys: calc(x, y) })
+              }
+              onMouseLeave={() => set({ xys: [0, 0, 1] })}
+              style={{ transform: props.xys.interpolate(trans) }}
+            />
+
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <animated.div
+              className="card"
+              onMouseMove={({ clientX: x, clientY: y }) =>
+                set({ xys: calc(x, y) })
+              }
+              onMouseLeave={() => set({ xys: [0, 0, 1] })}
+              style={{ transform: props.xys.interpolate(trans) }}
+            />
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </Row>
-      <Row className="tien-port-style">
-
-        <div className="tien-projects" onClick={() => window.open('https://t-movie-list.netlify.app', '_blank')} >
-
-          <div className="back-macbook" style={{ backgroundColor: "#628281" }}></div>
-          <img src={Macbook1} className="front-macbook" />
-
-        </div>
-
-        <div className="tien-projects" onClick={() => window.open('https://tien-tictactoe-game.netlify.app', '_blank')}>
-          <div className="back-macbook" style={{ backgroundColor: "#e8dcc2" }}></div>
-          <img src={Macbook2} className="front-macbook" />
-        </div>
-
-        <div className="tien-projects" onClick={() => window.open('https://t-todolist.netlify.app', '_blank')}>
-          <div className="back-macbook" style={{ backgroundColor: "#ACA9BB" }}></div>
-          <img src={Macbook3} className="front-macbook" />
-        </div>
-
-
-      </Row>
-
     </div>
-  )
-}  //
+  );
+};
 
-export default Portfolios
+export default Portfolios;
