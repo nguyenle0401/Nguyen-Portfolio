@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <MDBFooter
       color="black"
-      className="font-small darken-3 pt-0 nguyen-footer-style"
+      className="font-small darken-3 pt-0"
     >
       <MDBContainer>
         <MDBRow>
-          <MDBCol md="12" className="py-5">
+          <MDBCol>
             <div className="mb-5 flex-center">
               <a
                 className="fb-ic"
@@ -27,7 +27,7 @@ const Footer = () => {
                 className="tw-ic"
                 onClick={() =>
                   window.open(
-                    "https://github.com/nguyennguyenmoments/",
+                    "https://github.com/nguyenle0401",
                     "_blank"
                   )
                 }
@@ -38,16 +38,16 @@ const Footer = () => {
             </div>
           </MDBCol>
         </MDBRow>
-      </MDBContainer>
-      <div className="footer-copyright text-center py-3">
+        <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{" "}
           <a href="https://www.MDBootstrap.com">
             {" "}
-            nguyennguyenmoments@gmail.com{" "}
+            Nguyen Le{" "}
           </a>
         </MDBContainer>
       </div>
+      </MDBContainer>
     </MDBFooter>
   );
 };
