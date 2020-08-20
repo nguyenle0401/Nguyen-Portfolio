@@ -41,12 +41,13 @@ body {
   position: absolute;
   will-change: transform;
   border-radius: 50%;
-  background-image: -webkit-linear-gradient(
+  background-image: 
+  -webkit-linear-gradient(
     0deg,
-    #08dfe6 0%,
-    #f9fbfc 100%
+    #f8cc06 0%,
+    #f7e707 100%
   ) !important;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(247, 210, 2, 0.75);
   opacity: 0.6;
   display: flex;
   justify-content: center;
@@ -76,7 +77,8 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(251, 252, 251, 0.8); */
+  
 }
 
 .hooks-main > div:nth-child(2)::after {
@@ -100,20 +102,19 @@ body {
   filter: url("#goo");
   overflow: hidden;
 }
-/* .size-caro{
-  min-width: 100% !important;
-  min-height: 100% !important;
+
+.size-caro{
+  width: 100% !important;
+  height: 100% !important;
+  background-image: url("/src/Images/sky.jpg");
+  background-size: 100%;
 }
+
 .my-name{
-  color: black;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: monospace;
-  font-size: 40px;
-  display:flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content:center;
-  background-size:100%;
-} */
+  width: 100% !important;
+  height: 100% !important;
+  font-size: 15px;
+  height: 100% !important;
+  background-image: url("/src/Images/sky.jpg") !important;
+  background-size: 100%;
+} 

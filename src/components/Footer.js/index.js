@@ -5,7 +5,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 const Footer = () => {
   return (
     <MDBFooter
-      color="cyan"
+      color="black"
       className="font-small darken-3 pt-0 nguyen-footer-style"
     >
       <MDBContainer>

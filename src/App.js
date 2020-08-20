@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Home></Home>
-      {/* <AboutMe></AboutMe> */}
+      <AboutMe></AboutMe>
       <Portfolios></Portfolios>
 
       <Footer></Footer>

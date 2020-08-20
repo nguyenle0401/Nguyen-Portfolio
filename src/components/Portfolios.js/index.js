@@ -30,8 +30,16 @@ const Portfolios = () => {
               style={{ transform: props.xys.interpolate(trans) }}
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <a
+                href="https://dreamy-colden-5abbf3.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>Nguyen's Todos</h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </a>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -45,8 +53,16 @@ const Portfolios = () => {
             />
 
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a
+                href="https://hardcore-wright-d0a0f5.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>Number Guessing Game</h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </a>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -59,10 +75,16 @@ const Portfolios = () => {
               style={{ transform: props.xys.interpolate(trans) }}
             />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+            <a
+                href="https://trusting-archimedes-fc5270.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>Hungry Up!!!</h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </a>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
