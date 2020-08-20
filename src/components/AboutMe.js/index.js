@@ -37,7 +37,7 @@ const AboutMe = () => {
       <section class="site-section" id="section-contact">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 mb-5">
+            <div class="col-md-2 ml-4">
               <div class="section-heading text-center"></div>
             </div>
             <div class="col-md-7 mb-5 mb-md-0">
@@ -81,7 +81,7 @@ const AboutMe = () => {
                 </div>
               </form>
             </div>
-            <div class="col-md-5 pl-md-5 ">
+            {/* <div class="col-md-5 pl-md-5 ">
               <h3 class="mb-5">My Details</h3>
               <ul className="list-group bg-list">
                 <li className="list-group-item">Full name: Le Thi Thuy Nguyen</li>
@@ -89,7 +89,7 @@ const AboutMe = () => {
                 <li className="list-group-item">Email: nle2059@gmail.com</li>
                 <li className="list-group-item">Phone: 0833 225 280</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
