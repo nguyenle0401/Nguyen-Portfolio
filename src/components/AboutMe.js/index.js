@@ -42,7 +42,7 @@ const AboutMe = () => {
             </div>
             <div class="col-md-7 mb-5 mb-md-0">
               <form action="" class="site-form">
-                <h3 class="mb-5">Get In Touch</h3>
+                <h3 class="mb-5 mt-5"><strong>Get In Touch</strong></h3>
                 <div class="form-group">
                   <input
                     type="text"
