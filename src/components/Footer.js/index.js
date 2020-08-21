@@ -14,7 +14,7 @@ const Footer = () => {
                   className="fb-ic"
                   onClick={() =>
                     window.open(
-                      "https://www.facebook.com/nguyen.nguyen.moments/",
+                      "https://www.facebook.com/nguyenle0401",
                       "_blank"
                     )
                   }
