@@ -130,7 +130,6 @@ body {
   height: 100% !important;
 } 
 .background-home{
-  height: 50%;
   background-size:100%;
-  background-image: url("/Images/p1.jpg") !important;
+  background-image: url("/Images/n1.jpeg") !important;
 }

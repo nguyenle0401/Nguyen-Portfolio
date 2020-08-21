@@ -9,7 +9,7 @@ const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`;
 
 const Home = () => {
   const [trail, set] = useTrail(3, () => ({
-    xy: [300, 300],
+    xy: [400, 200],
     config: (i) => (i === 0 ? fast : slow),
   }));
   const items = [

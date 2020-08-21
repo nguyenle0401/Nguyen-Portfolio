@@ -34,9 +34,8 @@ const Footer = () => {
             </MDBCol>
           </MDBRow>
           <div className="text-center py-3">
-            <MDBContainer fluid>
-              &copy; {new Date().getFullYear()} Copyright:{" "}
-              <a href="https://www.MDBootstrap.com"> Nguyen Le </a>
+            <MDBContainer fluid style = {{color:"black"}}>
+            Copyright © 2020 All rights reserved | This template is made with  by Nguyen Le
             </MDBContainer>
           </div>
         </MDBContainer>
