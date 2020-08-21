@@ -39,3 +39,14 @@
 li.list-group-item{
   background-color: rgba(240, 230, 140, 0.014);
 }
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.section-heading{
+  width: 100%;
+  text-anchor: middle;
+}
+

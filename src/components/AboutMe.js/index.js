@@ -40,7 +40,31 @@ const AboutMe = () => {
             <div class="col-md-2 ml-4">
               <div class="section-heading text-center"></div>
             </div>
-            <div class="col-md-7 mb-5 mb-md-0">
+            <div class="section-heading">
+              <h2 className="mt-7" style={{ color: "black" }}>
+                <strong>My Skills</strong>
+              </h2>
+            </div>
+            <div className="icon">
+              <img
+                src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png"
+                style={{ width: "400px", height: "100px" }}
+              ></img>
+              <img
+                src="Images/logo512.png"
+                style={{ width: "150px", height: "150px" }}
+              ></img>
+              <img
+                src="https://nodejs.org/static/images/logo.svg"
+                style={{ width: "200px", height: "200px" }}
+              ></img>
+              <img
+                src="Images/mongodb.svg"
+                style={{ width: "200px", height: "200px" }}
+              ></img>
+            </div>
+
+            {/* <div class="col-md-7 mb-5 mb-md-0">
               <form action="" class="site-form">
                 <h3 class="mb-5 mt-5"><strong>Get In Touch</strong></h3>
                 <div class="form-group">
@@ -80,7 +104,7 @@ const AboutMe = () => {
                   />
                 </div>
               </form>
-            </div>
+            </div> */}
             {/* <div class="col-md-5 pl-md-5 ">
               <h3 class="mb-5">My Details</h3>
               <ul className="list-group bg-list">
