@@ -37,9 +37,12 @@ const Home = () => {
 
   return (
     <div className="background-home">
-      <div className = "index1">
+      <div className="index1">
         <div>
-          <svg style={{ position: "absolute", width: 0, height: 0 }}>
+          <svg
+            className="circle"
+            style={{ position: "absolute", width: 0, height: 0 }}
+          >
             <filter id="goo">
               <feGaussianBlur
                 in="SourceGraphic"
@@ -52,7 +55,7 @@ const Home = () => {
               />
             </filter>
           </svg>
-       
+
           <div
             className="hooks-main"
             onMouseMove={(e) => set({ xy: [e.clientX, e.clientY] })}
